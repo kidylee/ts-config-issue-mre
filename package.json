@@ -1,8 +1,14 @@
 {
-  "name": "ts-config-extends",
+  "name": "@my/ts-config-extends",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "exports":{
+    "./tsconfig.parent.json": {
+      "import": "./tsconfig.parent.json"
+    }
+  
+  },
   "scripts": {
     "build": "tsc",
     "test-ts": "jest --config jest.config.ts --passWithNoTests",
